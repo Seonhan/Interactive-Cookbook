@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mainpage.css">
+    <title>CookTorial</title>
+</head>
+
+<body>
+    <div class="sidebox">
+        <div class="maintitle">
+            <h1 style="font-size: 35px;">Interactive Cooking Turtorial</h1>
+        </div>
+
+        <div class="categories">
+            <div class="list">
+                <ul>
+                    <a href=""><li>Breakfast</li></a>
+                    <a href=""><li>Brunch</li></a>
+                    <a href=""><li>Lunch</li></a>
+                    <a href=""><li>Snacks</li></a>
+                    <a href=""><li>Dinner</li></a>
+                    <a href=""><li>Desert</li></a>
+                    <a href=""><li>Pasrty</li></a>
+                    <a href=""><li>Drinks</li></a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="morebox">
+            <p>More</p>
+        </div>
+
+    </div>
+    
+   <div class="recipecontainer">
+
+        <div class="recipetitle">
+            <h1>Recipes Prefence</h1>
+        </div>
+
+        
+        <div class="recipes">
+
+            <div class="res">
+                <img src="images/1.jpg" alt="FoodPic">
+                <h4>Makanan 1</h4>
+            </div>
+
+            <div class="res">
+                <img src="images/2.jpg" alt="FoodPic">
+                <h4>Makanan 2</h4>
+            </div>
+        
+            <div class="res">
+                <img src="images/3.jpg" alt="FoodPic">
+                <h4>Makanan 3</h4>
+            </div>
+
+            <div class="res">
+                <img src="images/4.jpg" alt="FoodPic">
+                <h4>Makanan 4</h4>
+            </div>
+
+        </div>
+            
+        <div class="recipes">
+
+            <div class="res">
+                <img src="images/4.jpg" alt="FoodPic">
+                <h4>Makanan 5</h4>
+            </div>
+
+            <div class="res">
+                <img src="images/3.jpg" alt="FoodPic">
+                <h4>Makanan 6</h4>
+            </div>
+        
+            <div class="res">
+                <img src="images/2.jpg" alt="FoodPic">
+                <h4>Makanan 7</h4>
+            </div>
+
+            <div class="res">
+                
+                <button id="myBtn" class="btn">
+                    <img src="images/mojito2.jpg" alt="FoodPic">
+                    <h4>Mojito</h4>
+                </button>
+
+                <div id="myModal" class="modal">
+
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+
+                        <div class="shrttext">
+                            <img src="/images/mojito.jpg" alt="Mojito">
+
+                            <div class="desc">
+                                <h1>Mojito</h1>
+                                <p>Alexander</p>
+                                <h4 style="font-weight: bold;">207 calories</h4>
+                                <a href="/mojito.html">Make It Now</a>
+                            </div>
+
+                        </div>
+
+                        <div class="htmkcon">
+                            <div class="htmk">
+                                <ul>
+                                    <li>11/2 oz White Run</li>
+                                    <li>1 oz Fresh Lime</li>
+                                    <li>2 teaspoons sugar</li>
+                                </ul>
+                            </div>
+    
+                            <div class="htmk">
+                                <ul>
+                                    <li>6 Leaves of Mint</li>
+                                    <li>Soda Water</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+   
+    </div>
+
+    <script>
+        var modal = document.getElementById("myModal");
+
+        var btn = document.getElementById("myBtn");
+
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
